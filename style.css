@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+body > * {
+  background-color: rgba(111, 111, 111, 0.235);
+}
+
+/*# sourceMappingURL=style.css.map */
