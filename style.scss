@@ -4,3 +4,69 @@
     padding: 0;
     word-wrap: break-word;
 }
+$padding_extrashort:5px;
+$padding_short:1ex;
+$margin_medium:2.1rem;
+html{
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: solid;
+}
+    body{
+        max-width: 1400px;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: #121212;
+        color: white;
+        & > * {
+            background-color: rgba(111, 111, 111, 0.235);
+        }
+        &>article{
+            margin: $margin_medium;
+            text-align: center;
+            &>*{
+                padding: $padding_short;
+            }
+        }
+        header{
+            &>.header-title{
+                font-size: 5vw;
+                text-align: center;
+                text-transform: capitalize;
+                text-shadow: 1px 0 3px #ffffff7d;
+                padding: $padding_extrashort;
+            }
+        }
+        article.landen-article{
+  
+            &>ul.landen-ul{
+
+                &>li{
+
+                }
+            }
+        }
+        article.gemiddelde-article{
+            background-color: red;
+
+        }
+        article.onder-gemiddelde-article{
+            background-color: red;
+            &>ul.onder-gemiddelde-ul{
+                &>li{
+                    padding: $padding_short;
+                }
+            }
+        }
+        article.boven-gemiddelde-article{
+            background-color: red;
+            &>ul.boven-gemiddelde-ul{
+                &>li{
+                    padding: $padding_short;
+                }
+            }
+        }
+    }
+}

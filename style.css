@@ -5,12 +5,50 @@
   word-wrap: break-word;
 }
 
-body {
+html li {
+  list-style-type: none;
+}
+html a {
+  text-decoration: solid;
+}
+html body {
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
   background-color: #121212;
   color: white;
 }
-body > * {
+html body > * {
   background-color: rgba(111, 111, 111, 0.235);
+}
+html body > article {
+  margin: 2.1rem;
+  text-align: center;
+}
+html body > article > * {
+  padding: 1ex;
+}
+html body header > .header-title {
+  font-size: 5vw;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 1px 0 3px rgba(255, 255, 255, 0.4901960784);
+  padding: 5px;
+}
+html body article.gemiddelde-article {
+  background-color: red;
+}
+html body article.onder-gemiddelde-article {
+  background-color: red;
+}
+html body article.onder-gemiddelde-article > ul.onder-gemiddelde-ul > li {
+  padding: 1ex;
+}
+html body article.boven-gemiddelde-article {
+  background-color: red;
+}
+html body article.boven-gemiddelde-article > ul.boven-gemiddelde-ul > li {
+  padding: 1ex;
 }
 
 /*# sourceMappingURL=style.css.map */
